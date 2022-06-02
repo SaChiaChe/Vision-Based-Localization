@@ -1,4 +1,4 @@
-# 3DCV 2022 Final Project - Visual-Based Localization
+# 3DCV 2022 Final Project - Vision-Based Localization
 
 ## Get Started:
 * Install the colmap: https://colmap.github.io/install.html
@@ -11,7 +11,7 @@
 * Open3D
 
 ## Model Construction
-`./training/model_construction/` is for model construction.
+`src/training/model_construction/` is for model construction.
 <br>
 ### `SIFT_Colmap`
 This directory is for constructing model using SIFT feature extraction.
@@ -44,7 +44,7 @@ This directory is for converting construction file to our own data format.
 4. The output file will be named as `model.pkl` under `SFM2DB` directory.
 
 ## Model Compression
-`./training/model_compression/` is for model compression.
+`src/training/model_compression/` is for model compression.
 1. Run `run_compress.sh <model_path> <compress_model_name>`.
 `<model_path>` is the path where the `model.pkl` generated from `SFM2DB`.
 `<compress_model_name>` is the name of the output file.
