@@ -2,6 +2,7 @@
 
 ## Get Started:
 * Install the colmap: https://colmap.github.io/install.html
+* Download models and place it at src/model: https://drive.google.com/drive/folders/1DJCcjF9xzN5Ls4qFzQhYElpztzg4NYKU?usp=sharing
 
 ## Dependencies:
 * Python 3.8+
