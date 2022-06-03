@@ -51,10 +51,10 @@ This directory is for converting construction file to our own data format.
 2. Output files will be named as `<compress_model_name>_<K>.pkl`, `<compress_model_name>_pca_<K>.pkl`, `<compress_model_name>_local_<K>.pkl` with different `K` values : (20, 50, 100, 200).
 
 ## Camera Localization
-This directory is for Inference.
-1. Run `run_exp.py` to rebuild our result.
+`src/inference` is for Inference.
+1. Run `run_exp.py` to reproduce our result.
 
-In order to run other inference data, use `inference.py`
+For a single trial of experiment, please use `inference.py` as the following.
 ```
 usage: inference.py [-h] [--input INPUT] [--camera_parameters CAMERA_PARAMETERS]
                     [--useSparse] [--sparse_model_file SPARSE_MODEL_FILE]
@@ -93,3 +93,10 @@ optional arguments:
   --view_scale VIEW_SCALE
                         scale of visuzalization
 ```
+2. After running `inference.py`, the frames with information written on and the localization results will be saved inside `video/[video_name]`, where `video_name` refers to the inference setting. There will be a `log.txt` that reports the median execution time for each frame and the median FPS.
+
+3. run `python video.py` to generate the video from frames, which will be stored at `video/`. The localization results will be combined into the frames. An extra file `SucRate.txt` will be generated, reporting the success rate of pose estimation for each test video.
+ 
+### More Results
+Inference videos can be found at: https://drive.google.com/drive/folders/1QuVm8hQINQjTym3AJXzGTbwrSLWh7nco?usp=sharing
+The file names indicate the inference settings
