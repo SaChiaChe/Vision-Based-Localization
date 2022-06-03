@@ -99,4 +99,3 @@ optional arguments:
  
 ### More Results
 Inference videos can be found at: https://drive.google.com/drive/folders/1QuVm8hQINQjTym3AJXzGTbwrSLWh7nco?usp=sharing
-The file names indicate the inference settings
